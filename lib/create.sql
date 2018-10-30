@@ -19,3 +19,15 @@ CREATE TABLE pledges (
   user_id INTEGER,
   project_id INTEGER
 );
+
+CREATE TABLE projects_pledges (
+  id INTEGER PRIMARY KEY,
+  project_id INTEGER,
+  pledge_id INTEGER
+);
+
+CREATE TABLE projects_users (
+  id INTEGER PRIMARY KEY,
+  project_id INTEGER,
+  user_id INTEGER
+);
